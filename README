@@ -1,0 +1,26 @@
+Where to find the Requirements:
+
+Hyperlink: index.html {line 99,100,101,104,132,133,134,135}, 
+           career.html {line 115,140}.
+
+Image: index.html {line 119}
+       career.html {line 148,153,158}
+       login.html {line 109,110}.
+
+Button Navigation: career.html {line 295}
+                   index.html {line 99,100,101}
+
+Ordered list: career.html {line 138-141, 256-261}
+
+Unordered List: career.html {line 253-290}
+
+Table: career.html {line 171-225}
+
+Form: contact.html {line 151-214}
+
+Style Sheets: inline - index.html {line 113,114,120,}
+              embeded - index.html {line 10-93}
+              external - index.html {line 8}, career.html {line 10}, login.html {line 8}
+
+Home page is named index.html.
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact the Creator</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./contact_css.css">
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Ubuntu&display=swap');
+         body {
+             margin: 0;
+             box-sizing: border-box;
+             background-color: #c1d9ee;
+             color: #313340;
+             font-family: 'Poppins', sans-serif;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+         }
+
+         a {
+            text-decoration: none;
+         }
+
+         nav {
+             width: 100%;
+            height: 7vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #313340;
+
+            -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+         }
+         nav a {
+            height: 100%;
+            display: flex;
+            margin: 0 50px;
+         }
+         .nav__button {
+             font-size: 1.3rem;
+            align-content: center;
+            font-family: 'Roboto Mono', monospace;
+            border: none;
+            background: none;
+            color: #c1d9ee;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+         }
+
+         nav__button:hover {
+             opacity: 0.7;
+         }
+
+         #active_button {
+            border-bottom: 2px solid #c1d9ee;
+         }
+
+         .sign__in {
+            background-color: #73320D;
+            border: none;
+            border-radius: 25px;
+            width: 8rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+
+        .sign__in a {
+            color: #c1d9ee;
+            text-decoration: none;
+            padding-top: 0.5rem;
+            padding-left: 2.2rem;
+            margin: 0;
+        }
+
+         footer {
+             height: 7vh;
+             width: 100%;
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+            background-color: #313340;
+            color:#c1d9ee;
+             -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+         }
+
+         .footer-links a {
+            margin: 0 20px;
+             color: #c1d9ee;
+         }
+
+         main {
+             /* height: 86vh; */
+             width: 50%;
+         }
+
+         form {
+             display: flex;
+             flex-direction: column;
+             align-items: flex-start;
+             justify-content: center;
+             padding-left: 20%;
+         }
+
+         form > div {
+             margin-bottom: 2rem;
+             display: flex;
+             gap: 1rem;
+         }
+         
+         .button {
+             display: flex;
+             justify-content: center;
+             padding: 2rem;
+             gap: 3rem;
+             padding-left: 20%;
+         }
+
+         .button button {
+            background-color: #73320D;
+            color: #c1d9ee;
+            border: none;
+            border-radius: 25px;
+            width: 8rem;
+            height: 2rem;
+            cursor: pointer; 
+         }
+     </style>
+ </head>
+ <body>
+     <!-- Navigation Section -->
+     <nav>
+         <a href="index.html"><button class="nav__button" >Home</button></a>
+         <a href="career.html"><button class="nav__button">Career</button></a>
+         <a href="contact.html"><button class="nav__button" id="active_button">Contact</button></a>
+
+         <button class="sign__in"><a href="./login.html">Sign In</a></button>
+     </nav>
+
+
+     <main>
+         <h1 style="text-align: center; padding-top: 5rem;">Contact the Creator of this website</h1>
+         <h3 style="text-align: center;">Tell him about your experience of this website</h3>
+
+         <form action="./contact.html" method="GET">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">    
+            </div>
+            
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div>
+                <label for="experience">Your Experience</label>
+                <select name="experience" id="experience">
+                    <option value="worst">Worst</option>
+                    <option value="bad">Bad</option>
+                    <option value="average">Average</option>
+                    <option value="good">Good</option>
+                    <option value="awesome">Awesome</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="score">How was your experience (1-10)? (1 being very bad, 10 being very good)</label>
+                <input type="number" id="score" name="score" min="1" max="10">
+            </div>
+            
+            <div>
+                <label for="slider">Or You can use range slider for that :  0 <input type="range" name="slider" id="slider" min="1" max="10"> 10</label>
+            </div>
+
+            <div>
+                Have you found any bug?
+                
+                <input type="radio" name="bug" id="yes">
+                <label for="yes">Yes</label>
+                
+                <input type="radio" name="bug" id="no">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <label for="attachment">If yes, take a screenshot and upload</label>
+                <input type="file" id="attachment" name="attachment">
+            </div>
+
+            <div>
+                <label for="date">Date: <input type="date"/></label>
+            </div>            
+            
+            <div>
+                <label for="time">Time: <input type="time"></label>
+            </div>
+
+            <div class="button">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+     </main>
+
+     <!-- Footer Section -->
+     <footer>
+        <div class="ft-name">
+            <p>Website by Moshiur Rahman</p>
+        </div>
+
+        <div class="footer-links">
+            <a target="_blank" href="https://github.com/moshiurr"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/moshiur-rahman-23423115a/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="http://" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p>&copy;2021 copyright all reserved.</p>
+     </footer>
+ </body>
+ </html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Oni Hasan's Career</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+     <!-- link to external style sheet -->
+     <link rel="stylesheet" href="./career.css">
+
+     <!-- embeded style -->
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Ubuntu&display=swap');
+         body {
+             margin: 0;
+             box-sizing: border-box;
+             background-color: #c1d9ee; 
+             color: #313340;
+             font-family: 'Poppins', sans-serif;
+         }
+
+         a {
+            text-decoration: none;
+         }
+
+         nav {
+             width: 100%;
+            height: 7vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #313340;
+
+            -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+         }
+         nav a {
+            height: 100%;
+            display: flex;
+            margin: 0 50px;
+         }
+         .nav__button {
+             font-size: 1.3rem;
+            align-content: center;
+            font-family: 'Roboto Mono', monospace;
+            border: none;
+            background: none;
+            color: #c1d9ee;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+         }
+
+         nav__button:hover {
+             opacity: 0.7;
+         }
+
+         #active_button {
+            border-bottom: 2px solid #c1d9ee;
+         }
+
+         .sign__in {
+            background-color: #73320D;
+            border: none;
+            border-radius: 25px;
+            width: 8rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+
+        .sign__in a {
+            color: #c1d9ee;
+            text-decoration: none;
+            padding-top: 0.5rem;
+            padding-left: 2.2rem;
+            margin: 0;
+        }
+
+         footer {
+             height: 7vh;
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+            background-color: #313340;
+            color:#c1d9ee;
+             -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+         }
+
+         .footer-links a {
+            margin: 0 20px;
+             color: #c1d9ee;
+         }
+     </style>
+ </head>
+ <body>
+     <!-- Navigation Section -->
+     <nav>
+         <a id="top" href="index.html"><button class="nav__button" >Home</button></a>
+         <a href="career.html"><button class="nav__button" id="active_button">Career</button></a>
+         <a href="contact.html"><button class="nav__button">Contact</button></a>
+         <button class="sign__in"><a href="./login.html">Sign In</a></button>
+     </nav>
+
+
+
+
+     <main>
+         <div class="introduction">
+             <div class="title"><h1>INTRODUCTION</h1></div>
+
+             <p>Oni Hasan (born 1 August 1985) is a renowned celebrity, guitarist and composer from <em>Dhaka, Bangladesh</em>. 
+                He is best known as the lead guitarist and composer of the Bangladeshi heavy metal-hard rock band <a href="https://en.wikipedia.org/wiki/Warfaze" target="_blank"><strong>Warfaze</strong></a> from late 2006 to January 2015. 
+                Oni Hasan was also the lead guitarist-composer of a Bangladeshi heavy metal band named "<strong>Vibe</strong>" during the initial days of his career. 
+                Oni Hasan was a member of Bangladeshi metal band Warfaze which also featured the vocal talent of Mizan Rahman along 
+                with Sheikh Monirul Alam Tipu (drums and percussion), Shams Mansoor Ghani (keys), Naim Haque Roger (bass), as well as legendary guitarist Ibrahim Ahmad Kamal (guitar).
+            </p>
+
+            <div class="title"><h1>Early Life</h1></div>
+            <p>
+                Oni Hasan's birth name(full name) is Saleh Hasan Oni. He was born in Faridpur. He is of Bangladeshi descent and comes from a family of greater Comilla district, 
+                where musicians like Ustad Allauddin Khan, S.D. Burman, and R.D Burman have grown up. He is the eldest child of the family, with two younger brothers, 
+                Sunny and Sayem Hasan. His father Mr. Kamrul Hasan is a textile engineer and his mother Ruma Hasan is a home maker. His father played classical instruments, 
+                and the two younger brothers are guitarists as well.
+            </p>
+         </div>
+
+         <div class="band">
+             <div class="title"><h1>Associated Bands</h1></div>
+
+             <p>
+                 Oni has been associated with two bands only till now.
+             </p>
+
+             <!-- ordered list to represent the bands Oni hasan was part of -->
+             <ol>
+                 <li><strong>Vibe</strong> (2005-2007)</li>
+                 <li><a href="https://en.wikipedia.org/wiki/Warfaze" target="_blank"><strong>Warfaze</strong></a> (2007-Present)</li>
+             </ol>
+
+
+             <!-- Unordered list that hold some random picture of Oni hasan -->
+
+             <ul class="pic__section">
+                 <li class="img__container">
+                    <img src="./oni_stage.png" alt="Oni performing on stage">
+                    <p>Oni performing solo of 'Shrine' (2015)</p>
+                 </li>
+
+                 <li class="img__container"> 
+                    <img src="./Oni_hasan1.jpg" alt="Oni performing on stage">
+                    <p>Oni during a concert with 'Warfaze' </p>
+                 </li>
+
+                 <li class="img__container"> 
+                    <img src="./oni_3.jpg" alt="Oni performing on stage">
+                    <p>Oni performing in Stage</p>
+                 </li>
+             </ul>
+         </div>
+
+         <div class="discography">
+             <div class="title"><h1>Discography</h1></div>
+
+             <p>Here is the list of all of Oni Hasan's work till date- </p>
+
+             <!-- This is a table, that contains the band name, album name or song title and release year of that album or song that Oni hasan did so far. -->
+            
+             <table border="1">
+                 
+                <!-- Commented the caption, cause it looks very congested -->
+                 <!-- <caption><strong>Band Name(1st Column), Album/Song Name(2nd Column) and Their release year(3rd Column)</strong></caption> -->
+
+                 <thead>
+                     <tr>
+                         <th>Band Name</th>
+                         <th>Album/Song Name</th>
+                         <th>Release Year</th>
+                     </tr>
+                 </thead>
+
+                 <tbody>
+                     <tr>
+                         <td rowspan="2">Vibe</td>
+                         <td>Chena Jagot</td>
+                         <td>2007</td>
+                     </tr>
+                     <tr>
+                         <td>Underground 2</td>
+                         <td>2007</td>
+                     </tr>
+
+                     <tr>
+                         <td rowspan="3">Warfaze</td>
+                         <td>Pothchola</td>
+                         <td>2008</td>
+                     </tr>
+                     <tr>
+                         <td>Shomorpon</td>
+                         <td>2011</td>
+                     </tr>
+                     <tr>
+                         <td>Shotto</td>
+                         <td>2012</td>
+                     </tr>
+
+                     <tr>
+                         <td rowspan="3">Instrumental Solo</td>
+                         <td>Shrine</td>
+                         <td>2015</td>
+                     </tr>
+
+                     <tr>
+                         <td>Wild Aurora</td>
+                         <td>2016</td>
+                     </tr>
+
+                     <tr>
+                         <td>Shrine Revisited</td>
+                         <td>2020</td>
+                     </tr>
+                 </tbody>
+             </table>
+         </div>
+
+         <div class="personal__life">
+             <div class="title"><h1>Personal Life</h1></div>
+
+             <p>
+                Oni spends most of his time practising, learning and teaching the guitar. Apart from this, he is very health conscious, goes to the gym everyday and he does not drink nor smoke.
+                 He has got two tattoos on his right arm, a star which is his favourite symbol and "absolute perfection" written in Japanese under it. He believes everything he does, 
+                 be it music or personal life related, should be done with so much dedication that it is turns out to be absolutely perfect.
+             </p>
+
+             <p>
+                In 2011, he had to leave the country for his higher education in UK, at Keele University to study Marketing and Music Technology. 
+                He came back in March 2012, taking a leave from the University to record the 8th Warfaze album. Warfaze's 8th Album got released in Oct 2012 with 8 brand new tracks and one unreleased track. 
+                He has two compositions of his own in the album: Naa and Purnota. Both the tracks were big hits.
+             </p>
+
+             <p>
+                 Currently, He lives in China with his Girlfriend Cui Lily. 
+             </p>
+         </div>
+
+         <div class="equipment">
+             <div class="title"><h1>Equipment</h1></div>
+
+             <p>Oni has used a varity of equipment in his career. Some of them are listed below :-</p>
+
+             <ul>
+                 <li>
+                     Guitars
+                     <ol>
+                         <li>Jackson RR24</li>
+                         <li>Jackson RR3 Pro</li>
+                         <li>Jackson Matt Tuck Signature Rhoads</li>
+                         <li>Kiesel (Currently using)</li>
+                     </ol>
+                 </li>
+
+                 <li>
+                     Amplifiers
+                    <ol>
+                        <li>Marshall JVM</li>
+                    </ol>
+                 </li>
+
+                 <li>
+                     Effects
+                     <ol>
+                         <li>Boss Acoustic Simulator</li>
+                         <li>Boss Noise Suppressor NS2</li>
+                         <li>Boss Compressor Sustainer CS3</li>
+                         <li>Electro Harmonix Metal Muff</li>
+                         <li>Boss EQ GE 7</li>
+                         <li>Boss Digital Delay DD7</li>
+                         <li>Line 6 products</li>
+                     </ol>
+                 </li>
+
+                 <li>
+                    Accessories
+                    <ol>
+                        <li>Jazz 3 Guitar Picks</li>
+                    </ol>
+                 </li>
+             </ul>
+
+         </div>
+
+         <div class="jump">
+             <button id="jump__button"><a href="#top">Jump to Top</a></button>
+         </div>
+     </main>
+
+
+
+     <!-- Footer Section -->
+     <footer>
+        <div class="ft-name">
+            <p>Website by Moshiur Rahman</p>
+        </div>
+
+        <div class="footer-links">
+            <a target="_blank" href="https://github.com/moshiurr"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/moshiur-rahman-23423115a/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="http://" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p>&copy;2021 copyright all reserved.</p>
+     </footer>
+ </body>
+ </html>

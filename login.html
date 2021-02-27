@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Oni Hasan's Career</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="./login.css">
+
+     <!-- embeded style -->
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Ubuntu&display=swap');
+         body {
+             margin: 0;
+             box-sizing: border-box;
+             background-color: #c1d9ee;
+             color: #313340;
+             font-family: 'Poppins', sans-serif;
+             overflow: hidden;
+         }
+
+         a {
+            text-decoration: none;
+         }
+
+         nav {
+             /* position: fixed; */
+             width: 100%;
+            height: 7vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #313340;
+
+            -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+         }
+         nav a {
+            height: 100%;
+            display: flex;
+            margin: 0 50px;
+         }
+         .nav__button {
+             font-size: 1.3rem;
+            align-content: center;
+            font-family: 'Roboto Mono', monospace;
+            border: none;
+            background: none;
+            color: #c1d9ee;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+         }
+
+         nav__button:hover {
+             opacity: 0.7;
+         }
+
+         #active_button {
+            border-bottom: 2px solid #c1d9ee;
+         }
+
+         footer {
+             height: 7vh;
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+            background-color: #313340;
+            color:#c1d9ee;
+             -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.31);
+         }
+
+         .footer-links a {
+            margin: 0 20px;
+             color: #c1d9ee;
+         }
+
+     </style>
+ </head>
+ <body>
+     <!-- Navigation Section -->
+     <nav>
+         <a href="index.html"><button class="nav__button" >Home</button></a>
+         <a href="career.html"><button class="nav__button" >Career</button></a>
+         <a href="contact.html"><button class="nav__button">Contact</button></a>
+     </nav>
+
+
+
+    <main>
+
+        <!-- this form contains text type and password type input field and submit type buttton. -->
+        <div class="form">
+            <!-- inline style sheet -->
+            <h1 style="text-align: center;">Sign In</h1>
+
+            <form class="login_form" action="index.html" method="GET">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username/email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- two images -->
+        <img id="bg__guitar" src="./electric_bg.png" alt="guitar picture">
+        <img id="music" src="./mnote.png" alt="music note">
+    </main>
+    
+
+
+     <!-- Footer Section -->
+     <footer>
+        <div class="ft-name">
+            <p>Website by Moshiur Rahman</p>
+        </div>
+
+        <div class="footer-links">
+            <a target="_blank" href="https://github.com/moshiurr"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/moshiur-rahman-23423115a/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="http://" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p>&copy;2021 copyright all reserved.</p>
+     </footer>
+ </body>
+ </html>

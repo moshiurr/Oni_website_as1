@@ -1,0 +1,19 @@
+.name {
+    font-size: 4rem;
+}
+
+.intro__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#photo {
+    display: block;
+    margin: 0 auto;
+    height: 45em;
+    width: 35%;
+    object-fit: cover;
+    border: 3px solid #313340;
+}
